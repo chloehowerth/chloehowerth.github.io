@@ -1,17 +1,153 @@
-body
-  height: 100%
-  display: flex
-  justify-content: center
-  align-items: center
-
-
-#page-home
-  margin: 20px
-  display: flex
-
 .work
+  display: block
+  margin-top: 136px
+  padding-bottom: 54px
+
+.portfolio
+  padding: 0px 42px
+
+.portfolio-group
+  padding: 0px
+
+// grid section-header
+.section-header
+  //align-content: flex-start
+  //align-items: center
+  //display: flex
+  //flex-direction: row
+  //flex-wrap: wrap
+  //justify-content: flex-start
+  margin: 0px -6px 24px -6px
+  padding: 0px
+  position: relative
+  background-color: red
+
+.title
+  display: block
+  flex-grow: 1
+  padding: 0px 6px
   width: 100%
-  max-width: 1100px
-  margin: 0 auto
-  margin-top: 120px
+
+.group-name
+  display: block
+  letter-spacing: 0.4px
+  line-height: 72.32px
+
+// grid project-tiles
+.project-tiles
+  //align-content: flex-start
+  align-items: flex-start
+  //display: flex
+  //flex-direction: row
+  //flex-wrap: wrap
+  //justify-content: flex-start
+  margin: 0px -15px
+  transition-delay: 0s
+  transition-duration: 0.15s
+  transition-property: opacity
+  transition-timing-function: linear
+  background-color: aqua
+
+.project-tile
+  display: block
+  margin: 0px 0px 80px 0px
+  padding: 0px 15px
+  position: relative
+  transition-delay: 0s
+  transition-duration: 0.6s
+  transition-property: margin
+  transition-timing-function: ease-out
+  width: 33.33%
+  a
+    display: block
+    text-decoration-color: black
+    text-decoration-line: none
+    text-decoration-style: solid
+    transition-delay: 0s
+    transition-duration: 0.1s
+    transition-property: color
+    transition-timing-function: linear
+
+.project-img
   margin-bottom: 20px
+  position: relative
+
+.img-no-overlay
+  background-color: blue
+  display: block
+  position: relative
+
+.img-fluid
+  background-color: white
+  overflow-x: hidden
+  overflow-y: hidden
+  //position: absolute
+  left: 0px
+  margin-top: -1px
+  max-width: none
+  opacity: 1
+  top: 0px
+  transition-delay: 0s
+  transition-duration: 0.15s
+  transition-timing-function: linear
+  width: 401.656px
+
+.img-overlay
+  background-color: black
+  color: white
+  display: block
+  height: 100%
+  width: 100%
+  overflow-x: hidden
+  overflow-y: hidden
+  position: absolute
+  text-overflow: ellipsis
+  opacity: 0
+  top: 0px
+  left: 0px
+  transition-delay: 0s
+  transition-duration: 0.1s
+  transition-timing-function: linear
+
+.project-img:hover .img-overlay
+  opacity: 0.6
+
+.overlay-data-group
+  color: white
+  padding: 24px
+  margin-bottom: 12px
+  color: rgba(255, 255, 255, 0.54)
+  display: block
+  letter-spacing: 0.6px
+  text-transform: uppercase
+
+h4
+  margin: 0px
+
+.overview
+  color: white
+  letter-spacing: 0.1px
+  line-height: 30px
+  text-transform: none
+  margin: 0px
+
+.caption
+  background-color: blue
+  color: black
+  display: block
+  line-height: 18px
+  h6
+    color: black
+    display: block
+    font-size: 18px
+    letter-spacing: 0.8px
+    //margin-bottom: 12px for media query
+    margin: 0px
+    text-transform: uppercase
+  h3
+    color: black
+    display: block
+    font-size: 32px
+    letter-spacing: 0.3px
+    line-height: 41.28px
+    margin: 0px
