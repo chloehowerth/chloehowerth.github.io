@@ -352,6 +352,11 @@ h1.page-title {
   font-size: 18px;
   text-transform: uppercase; }
 
+a.CH-nav-logo {
+  max-width: 73px;
+  text-decoration-line: none;
+  text-decoration-style: solid; }
+
 a.nav-logo {
   color: white;
   text-decoration: none;
@@ -431,17 +436,8 @@ footer {
   width: 30.3%; }
 
 .footer-logo {
-  color: white;
-  display: block;
-  flex-basis: 100%;
-  font-size: 15px;
-  letter-spacing: 0.8px;
   margin: 0px 36px 24px 0px;
-  position: relative;
-  text-align: left;
-  text-transform: uppercase;
-  top: 3px;
-  width: auto; }
+  position: relative; }
 
 .social-links {
   padding: 0px 6px;
