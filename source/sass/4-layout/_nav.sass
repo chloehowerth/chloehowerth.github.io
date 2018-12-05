@@ -1,3 +1,10 @@
+header
+	width: 100%
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 100
+
 h1.page-title
   width: 20%
   padding: 0px 6px
@@ -5,10 +12,20 @@ h1.page-title
   font-size: 18px
   text-transform: uppercase
 
-a.CH-nav-logo
-  max-width: 73px
+#CH-nav-logo
+  //max-width: 73px
   text-decoration-line: none
   text-decoration-style: solid
+  img
+    max-width: 100%
+    display: block
+    height: auto
+
+a.menu-icon
+  display: hidden
+	width: 40px
+	height: 40px
+  color: $white
 
 a.nav-logo
   color: white
@@ -17,7 +34,6 @@ a.nav-logo
   padding-bottom: 5px
   &:hover
     border-bottom: white solid 1px
-
 
 .nav-menu
   display: flex
