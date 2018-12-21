@@ -1,8 +1,5 @@
 header
-	height: 100px
 	width: 100%
-
-	padding: 0px 20px
 	position: fixed
 	top: 0
 	left: 0
@@ -17,6 +14,9 @@ h1.page-title
 
 #CH-nav-logo
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of b029d85... Update header to be responsive
   //max-width: 73px
   text-decoration-line: none
   text-decoration-style: solid
@@ -25,6 +25,7 @@ h1.page-title
     display: block
     height: auto
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 .navbar-toggle
@@ -41,17 +42,23 @@ h1.page-title
 =======
 =======
 >>>>>>> parent of e73658f... Make header responsive
+=======
+>>>>>>> parent of b029d85... Update header to be responsive
 a.menu-icon
   display: hidden
 	width: 40px
 	height: 40px
   color: $white
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of e73658f... Make header responsive
 =======
 >>>>>>> parent of e73658f... Make header responsive
+=======
+>>>>>>> parent of b029d85... Update header to be responsive
 
-//a.nav-logo
+a.nav-logo
+  color: white
   text-decoration: none
   border-bottom: transparent solid 1px
   padding-bottom: 5px
@@ -59,7 +66,6 @@ a.menu-icon
     border-bottom: white solid 1px
 
 .nav-menu
-	float: right
   display: flex
   flex-direction: row
   flex-grow: 1
@@ -87,47 +93,9 @@ a.menu-icon
     padding: 0px 6px
     margin-left: 26px
   .nav-link
+    color: white
     text-decoration: none
     border-bottom: transparent solid 1px
     padding-bottom: 5px
     &:hover
       border-bottom: white solid 1px
-
-.show-menu-icon
-	float: right
-
-.show-menu-icon i
-	line-height: 100px
-
-.show-menu-icon, .hide-menu-icon
-  transition: 0.4s
-  font-size: 30px
-	cursor: pointer
-  display: none
-
-#chk
-	position: absolute
-	visibility: hidden
-	z-index: -1111
-
-@media screen and (max-width:800px)
-	.show-menu-icon, .hide-menu-icon
-	  display: block
-	.nav-menu
-		position: fixed
-		width: 100%
-		height: 100vh
-		right: -100%
-		top: 0
-		padding: 80px 0
-		line-height: normal
-		transition: 0.7s
-	.nav-item
-		display: block
-		padding: 20px
-	.hide-menu-icon
-		position: absolute
-		top: 40px
-		right: 40px
-	#chk:checked ~ .nav-menu
-	  right: 0
