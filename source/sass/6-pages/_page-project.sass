@@ -1,3 +1,556 @@
-header
-  background-size: cover
+.project-page
+  padding-bottom: 20px
+
+section.project-image
+  padding: 0
+
+.project-page .project-image.no-mobile
+  display: none
+
+.project-page .project-image.mobile
+  display: block
+
+.project-page .project-image-container
+  position: relative
+
+.project-page .slideshow.space-filling
+  padding-bottom: 100%
+  min-height: 100vh
+
+.slideshow.space-filling
+  padding-bottom: 100%
+
+.slideshow
+  position: relative
+  overflow: hidden
+
+.project-page .title
+  font-weight: 300
+  font-size: 62px
+  line-height: 1.13
+  margin-bottom: 0
+  position: absolute
+  left: 0
+  bottom: 0
+  padding: 36px 23px 3px
+  margin-bottom: 54px
+  color: #fff
+
+.project-page .mobile-date
+  text-transform: uppercase
+  font-size: 18px
+  font-weight: 400
+  letter-spacing: 0.8px
+  display: block
+  position: absolute
+  left: 0
+  bottom: 0
+  padding: 24px
+  color: #fff
+
+.slideshow.space-filling .slides
+  position: absolute
+
+.slideshow .slides
+  position: relative
+  overflow: hidden
+  height: 100%
+
+.slideshow .slides .slide.loaded
+  opacity: 1
+
+.slideshow .slides .slide
+    float: left
+    overflow: hidden
+    background: none
+    padding: 0
+    position: relative
+    transition: 150ms linear opacity
+    opacity: 0
+
+.project-page .slideshow .slide.video img
+  -webkit-transform: scale(1)
+  -ms-transform: scale(1)
+  transform: scale(1)
+  transition: -webkit-transform 250ms ease-out
+  transition: transform 250ms ease-out
+  transition: transform 250ms ease-out, -webkit-transform 250ms ease-out
+
+.slideshow .slides img.loaded
+  opacity: 1
+
+.slideshow .slides img
+  display: block
+  max-width: none
+  transition: 150ms linear opacity
+
+.project-page .slideshow button.play-video
+  -webkit-transform: translate3d(-50%, -58%, 0)
+  transform: translate3d(-50%, -58%, 0)
+
+button.play-video
+    text-indent: -9999px
+    background-repeat: no-repeat
+    border: 0
+    background-color: transparent
+    background-position: center center
+    outline: none
+    background-size: 100% 100%
+    padding: 0
+    margin: 0
+    cursor: pointer
+    transition: 150ms linear opacity
+    display: block
+    line-height: 1
+    position: absolute
+    z-index: 1
+    left: 50%
+    top: 50%
+    width: 79px
+    height: 91px
+    -webkit-transform: translate3d(-50%, -50%, 0)
+    transform: translate3d(-50%, -50%, 0)
+
+/* Page Content */
+.project-page section.content
+  margin-top: 24px
+  padding: 0 19px
+
+.project-page .project-details
+  padding: 24px 0 24px
   width: 100%
+  margin-left: 0
+  margin-right: 0
+
+.project-page .project-description
+  margin-top: 0
+  padding: 0
+  width: 100%
+  margin-left: 0
+  margin-right: 0
+
+.project-page .project-overview
+  padding: 0 3px
+  width: 100%
+  margin-left: 0
+  margin-right: 0
+
+.project-page .project-overview .top-content
+  position: relative
+
+.project-page .project-overview .bottom-content
+  margin-top: 12px
+
+.project-page .project-overview .top-content .credit
+  width: 100%
+  margin-left: 0
+  margin-right: 0
+  margin-bottom: 24px
+
+.project-page .project-overview .credit
+  margin-bottom: 24px
+  padding-left: 6px
+  padding-right: 6px
+  width: 100%
+  margin-left: 0
+  margin-right: 0
+
+.project-page .project-overview .top-content .date
+  display: block
+  h6
+    text-transform: uppercase
+    font-size: 18px
+    font-weight: 400
+    letter-spacing: 0.8px
+    margin-bottom: 10px
+  h3
+    font-weight: 400
+    font-size: 38px
+    line-height: 1.29
+
+.project-page .past-date h3
+  display: inline-block
+
+.project-page .project-overview .bottom-content
+  margin-top: 12px
+
+.project-page .project-overview .credit
+  margin-bottom: 24px
+  padding-left: 6px
+  padding-right: 6px
+  width: 100%
+  margin-left: 0
+  margin-right: 0
+  h6
+    text-transform: uppercase
+    font-size: 18px
+    font-weight: 400
+    letter-spacing: 0.8px
+    margin-bottom: 10px
+  li
+    margin-bottom: 9px
+    font-weight: 400
+    font-size: 38px
+    line-height: 1.29
+
+.project-page .project-overview .credit li:first-of-type
+  margin-top: 0
+
+/* Other Projects */
+.project-page .explore
+  padding-bottom: 0
+
+.explore
+  padding: 0
+  margin: 0
+
+.project-page .explore .button-container
+  position: relative
+  display: block
+  height: auto
+  border-top: 1px solid #000
+  border-bottom: 1px solid #000
+  padding: 0
+  border-bottom: none
+
+.explore .button-container
+  position: relative
+  display: block
+  height: auto
+  padding: 0
+  width: 100%
+  margin-left: 0
+  margin-right: 0
+
+.explore .explore-wrapper
+  max-height: 0
+  overflow: hidden
+  margin-bottom: 0
+
+.explore .secondary-features.full
+  width: 100%
+  margin-left: 0
+  margin-right: 0
+  padding: 0
+
+.explore .secondary-features
+  padding: 0
+
+.explore .secondary-features.full .related-title
+  display: none
+  padding: 24px 0 20px
+  border-bottom: none
+
+.explore h6
+  text-transform: uppercase
+  font-size: 18px
+  font-weight: 400
+  letter-spacing: 0.8px
+  padding: 0 0 24px
+  margin-bottom: 33px
+  border-bottom: 1px solid #000
+  padding-left: 6px
+  padding-right: 6px
+  width: 100%
+  margin-left: 0
+  margin-right: 0
+
+.explore .feature-tile
+  margin-bottom: 54px
+  padding: 0 6px
+  width: 100%
+  margin-left: 0
+  margin-right: 0
+
+.explore .feature-tile.secondary:last-of-type
+  margin-bottom: 0
+
+.explore .tile-content
+  display: block
+  position: relative
+
+.explore .feature-tile.secondary .feature-image
+  width: 100%
+  min-height: 288px
+
+.explore .feature-image
+  position: relative
+  overflow: hidden
+  -webkit-flex-grow: 1
+  -ms-flex-positive: 1
+  flex-grow: 1
+  overflow: hidden
+
+.explore .feature-tile.secondary .feature-titling
+  margin: 0 16px
+
+.explore .feature-titling
+  padding-top: 18px
+
+.feature-titling
+  h6, h3
+    text-decoration: none
+    color: black
+
+.explore .feature-tile.secondary .feature-image
+    width: 100%
+    min-height: 288px
+
+.explore .feature-image
+  position: relative
+  overflow: hidden
+  -webkit-flex-grow: 1
+  -ms-flex-positive: 1
+  flex-grow: 1
+  overflow: hidden
+
+.explore .feature-image .responsive-image
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+
+.explore .feature-image img
+  transition: -webkit-transform 500ms ease-out
+  transition: transform 500ms ease-out
+  transition: transform 500ms ease-out, -webkit-transform 500ms ease-out
+  -webkit-transform-origin: center center
+  -ms-transform-origin: center center
+  transform-origin: center center
+  position: absolute
+  top: 0
+  left: 0
+  max-width: none
+
+.explore img
+  -webkit-backface-visibility: hidden
+  backface-visibility: hidden
+  opacity: 1
+
+.responsive-image img
+  position: absolute
+  top: 0
+  left: 0
+  max-width: none
+
+.explore .secondary-features.full .related-eyebow
+  border-bottom: 0
+  padding: 0
+  margin-bottom: 6px
+
+
+/* Responsive */
+@media screen and (min-width: 640px)
+  .project-page
+    padding-bottom: 48px
+  .project-page .project-image.no-mobile
+    display: block
+  .project-page .project-image.mobile
+    display: none
+  .project-page section.content
+    margin-top: 54px
+    padding: 0 31px
+  .project-page .slideshow.space-filling
+    padding-bottom: 55%
+    min-height: 0
+  .project-page .title
+    margin-top: 0
+    margin-bottom: 0
+    padding: 36px 21px 46px
+    font-size: 38px
+    line-height: 38px
+  .project-page .mobile-date
+    display: none
+  .project-page .mobile-date
+    font-size: 13px
+  .project-page .slideshow button.play-video
+    -webkit-transform: translate3d(-50%, -50%, 0)
+    transform: translate3d(-50%, -50%, 0)
+  button.play-video
+    width: 99px
+    height: 114px
+  /* Page Content */
+  .project-page .project-details
+    padding: 0 0 38px
+    border-bottom: 1px solid #000
+  .project-page .project-description
+    margin-top: 52px
+    padding-left: 12px
+  .project-page .project-overview
+    padding: 0
+  .project-page .project-overview .bottom-content
+    margin-top: 15px
+  .project-page .project-overview .top-content .credit
+    width: 50%
+    margin-left: 0
+    margin-right: 0
+    margin-bottom: 0
+  .project-page .project-overview .credit
+    margin-bottom: 0px
+  .project-page .project-overview .top-content .date
+    display: block
+    width: 50%
+    margin-left: 0
+    margin-right: 0
+    h6
+      font-size: 13px
+    h3
+      font-size: 24px
+      letter-spacing: 0.3px
+      line-height: 1.29
+  .project-page .project-overview .bottom-content
+    margin-top: 15px
+  .project-page .project-overview .credit
+    margin-bottom: 0
+    h6
+      font-size: 13px
+    li
+      font-size: 24px
+      letter-spacing: 0.3px
+      line-height: 1.29
+    .explore
+      margin: 0 38px
+      padding: 32px 0 48px
+      border-top: 1px solid #000
+  /* Other Projects */
+  .explore .explore-wrapper
+    overflow: visible
+    max-height: none
+  .explore .secondary-features
+    width: 66.66667%
+    margin-left: 0
+    margin-right: 0
+    padding: 0 40px 0 0
+  .explore .secondary-features.full .related-title
+    display: block
+  .explore h6
+    font-size: 13px
+  .explore .feature-tile.secondary
+    width: 100%
+    margin-left: 0
+    margin-right: 0
+  .explore .feature-tile
+    margin-bottom: 12px
+  .explore .secondary-features.full .feature-tile:nth-child(3)
+    padding: 0
+  .explore .secondary-features.full .feature-tile
+    width: 50%
+    margin-left: 0
+    margin-right: 0
+    padding: 0 42px 0 0
+    margin-bottom: 24px
+  .explore .feature-tile.secondary
+    width: 100%
+    margin-left: 0
+    margin-right: 0
+  .explore .feature-tile
+    margin-bottom: 12px
+  .explore .feature-tile.secondary:last-of-type
+    display: none
+  .explore .secondary-features.full .feature-tile:last-of-type
+    display: none
+    padding: 0
+  .explore .feature-tile.secondary .feature-titling
+    margin: 0
+
+@media screen and (min-width: 769px)
+  /* Page Content */
+  .project-page .project-overview .top-content
+    min-height: 76px
+  .project-page .project-overview .top-content .credit
+    width: 33.33333%
+    margin-left: 0
+    margin-right: 0
+  .project-page .project-overview .credit
+    margin-bottom: 24px
+  .project-page .project-overview .top-content .date
+    width: 33.33333%
+    margin-left: 0
+    margin-right: 0
+  .project-page .project-overview .credit
+    margin-bottom: 24px
+    ul
+    -webkit-column-count: 3
+    column-count: 3
+    -webkit-column-gap: 20px
+    column-gap: 20px
+
+@media screen and (min-width: 1024px)
+  .project-page .slideshow.space-filling
+    padding-bottom: 40.34%
+  .project-page .title
+    padding: 36px 21px 46px
+    font-size: 62px
+    line-height: 1.13
+  .project-page .mobile-date
+    font-size: 15px
+  /* Page Content */
+  .project-page .project-overview .top-content
+    min-height: 84px
+  .project-page .project-overview .top-content .date
+    h6
+      font-size: 15px
+    h3
+      font-size: 28px
+      letter-spacing: 0.3px
+      line-height: 1.29
+  .project-page .project-overview .credit
+    li
+      margin-bottom: 4px
+      font-size: 28px
+      letter-spacing: 0.3px
+      line-height: 1.29
+  /* Other Projects */
+  .explore h6
+    font-size: 15px
+  .explore .feature-tile
+    margin-bottom: 0
+  .explore .secondary-features.full .feature-tile:nth-child(3)
+    padding: 0 42px 0 0
+  .explore .secondary-features.full .feature-tile
+    width: 33.33333%
+    margin-left: 0
+    margin-right: 0
+  .explore .feature-tile.secondary
+    width: 50%
+    margin-left: 0
+    margin-right: 0
+  .explore .feature-tile
+    margin-bottom: 0
+  .explore .feature-tile.secondary:last-of-type
+    display: block
+  .explore .secondary-features.full .feature-tile:last-of-type
+    display: block
+
+@media screen and (min-width: 1300px)
+  .project-page .title
+    padding: 36px 32px 46px
+    font-size: 74px
+    line-height: 1.14
+  .project-page .mobile-date
+    font-size: 18px
+  /* Page Content */
+  .project-page .project-details
+    padding: 0 6px 38px
+  .project-page .project-overview
+    padding: 0 6px
+  .project-page .project-overview .top-content
+    min-height: 108px
+  .project-page .project-overview .top-content .credit
+    margin-bottom: 24px
+  .project-page .project-overview .credit
+    margin-bottom: 38px
+  .project-page .project-overview .top-content .date
+    h6
+      font-size: 18px
+    h3
+      font-size: 38px
+      line-height: 1.29
+  .project-page .project-overview .credit
+    margin-bottom: 38px
+    li
+      font-size: 38px
+      line-height: 1.29
+  .explore h6
+    font-size: 18px

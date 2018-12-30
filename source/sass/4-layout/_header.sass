@@ -1,10 +1,216 @@
 header
+  width: 100%
   position: fixed
   top: 0
   left: 0
   z-index: 3
+  transition: top 0.15s
   background-color: black
+
   section
-    display: -webkit-box
-    padding: 31px 38px 37px 38px
     position: relative
+    padding-top: 20px
+    padding-bottom: 20px
+
+  .grid
+    align-items: center
+
+  .page-title
+    width: 33.33333%
+    margin-left: 0
+    margin-right: 0
+
+  .logo
+    display: block
+    max-width: 63px
+
+  .scaling-svg-container
+    margin-top: 2px
+
+  nav
+    margin-top: 7px
+
+.grid
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  align-content: flex-start
+  align-items: flex-start
+  justify-content: flex-start
+  margin: 0 -6px
+
+/* Logo */
+#brand
+  display: block
+  font-size: 18px
+
+  a
+    color: white
+    text-transform: uppercase
+    text-decoration: none
+
+.scaling-svg-container
+  width: 100%
+  position: relative
+
+  .scaling-svg
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+/* Nav */
+.header
+  text-transform: none
+
+  #menu
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    justify-content: flex-start
+    align-content: flex-start
+    align-items: flex-start
+    margin: 0 -6px
+
+    li
+      display: list-item
+      padding: 0 6px
+      margin-right: 0
+
+      a
+        color: white
+        text-decoration: none
+        cursor: pointer
+        border-bottom: transparent solid 1px
+        padding-bottom: 5px
+        &:hover
+          border-bottom: white solid 1px
+
+/* Mobile Menu */
+#toggle
+  position: fixed
+  right: 24px
+  top: 25px
+  z-index: 999
+  width: 35px
+  cursor: pointer
+  transition: all 0.12s ease-in
+  visibility: hidden
+  opacity: 0
+  margin: -6px
+  padding: 6px
+  box-sizing: content-box
+
+  .span
+    height: 3px
+    background: white
+    transition: all 0.12s ease-in
+    backface-visibility: hidden
+    margin: 5px auto
+
+#toggle.on #one
+  transform: rotate(45deg) translateX(2px) translateY(4px)
+
+#toggle.on #two
+  opacity: 0
+
+#toggle.on #three
+  transform: rotate(-45deg) translateX(8px) translateY(-10px)
+
+#resize
+  z-index: 4
+  top: 0
+  bottom: 0
+  right: 0
+  position: fixed
+  background: rgba(0,0,0,0.92)
+  width: 100vw
+  height: 100vh
+  overflow-x: scroll
+  overflow-y: scroll
+  visibility: hidden
+  opacity: 0
+  transition: all 0.12s ease-in
+  display: table
+
+  nav
+    padding: 96px 25px 48px
+    margin-left: 12px
+
+  #resize-menu
+    height: 50px
+    display: table-cell
+    vertical-align: center
+
+    li
+      display: block
+      text-align: left
+      font-size: 40px
+      padding: 20px 0
+      min-height: 50px
+      cursor: pointer
+      transition: all 0.12s ease-in
+
+      a
+        color: white
+        text-decoration: none
+
+#resize.active
+  visibility: visible
+  opacity: 0.99
+
+/* Responsive */
+@media only screen and (min-width: 640px)
+  section
+    padding: 0 24px
+  header nav.header
+    font-size: 13px
+
+@media only screen and (max-width: 769px)
+  #toggle
+    visibility: visible
+    opacity: 1
+  nav
+    #menu
+      visibility: hidden
+
+@media screen and (min-width: 769px)
+  header .page-title
+    width: 20%
+    margin-left: 0
+    margin-right: 0
+  header .logo
+    max-width: 73px
+  header .menu-supplemental
+    display: flex
+    flex-direction: row
+    flex-grow: 1
+    justify-content: flex-end
+    text-align: right
+    width: auto
+    padding: 0 6px
+  header nav.header
+    display: block
+    width: auto
+  header .header ul li
+    width: auto
+    margin-left: 21.6px
+  #resize
+    visibility: hidden !important
+
+@media screen and (min-width: 1024px)
+  header .page-title
+    width: 20%
+    margin-left: 0
+    margin-right: 0
+  header nav.header
+    font-size: 15px
+  header nav.header ul li
+    margin-left: 26px
+
+@media screen and (min-width: 1300px)
+  header section
+    padding: 31px 38px 37px
+  header nav.header
+    font-size: 18px
