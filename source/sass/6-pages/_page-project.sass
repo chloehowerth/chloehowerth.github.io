@@ -231,8 +231,6 @@ ul.links a
   border-bottom: 1px solid #000
   padding: 0
   border-bottom: none
-.project-page .covers
-  display: none
 .project-page .project-description .button-container a.button
   cursor: pointer
 .project-page .project-description .button-container .button
@@ -267,6 +265,32 @@ ul.links a
   display: none
 .project-page .section p+p
   margin-top: 24px
+
+/* Project Cover Image */
+.project-page .button-container.cover .button
+  text-transform: uppercase
+  font-size: 18px
+  font-weight: 400
+  letter-spacing: 0.8px
+  display: block
+  padding: 26.4px 0
+  width: 100%
+  line-height: normal
+.project-page .section.mobile-covers
+  display: block
+  max-height: 0
+  overflow: hidden
+.project-page .section.mobile-covers .covers
+  display: block
+.project-page .covers
+  display: none
+  padding-left: 6px
+  padding-right: 6px
+  width: 100%
+  margin-left: 0
+  margin-right: 0
+.project-page .section.mobile-covers .cover
+  .single-film .posters .postermargin-top: 24px
 .project-page .covers .cover
   width: 50%
   margin-left: 0
@@ -275,6 +299,10 @@ ul.links a
   padding-right: 6px
 
 /* Other Projects */
+.project-page .explore .button-container.margin
+  margin: 0 12px
+.project-page .explore .button-container:first-of-type
+  border-bottom: none
 .project-page .explore .button-container
   position: relative
   display: block
@@ -283,7 +311,6 @@ ul.links a
   border-bottom: 1px solid #000
   padding: 0
   border-bottom: none
-
 .explore .button-container
   position: relative
   display: block
@@ -292,26 +319,47 @@ ul.links a
   width: 100%
   margin-left: 0
   margin-right: 0
-
+.project-page .explore .button-container .button
+  text-transform: uppercase
+  font-size: 18px
+  font-weight: 400
+  letter-spacing: 0.8px
+  display: block
+  padding: 26.4px 0
+  width: 100%
+  line-height: normal
+  margin: 0
+  border-top: none
+.explore .button-container a.button
+  width: calc(100% - 30px)
+  margin: 0 17px
+  cursor: pointer
+.explore .button-container button
+  text-transform: uppercase
+  font-size: 18px
+  font-weight: 400
+  letter-spacing: 0.8px
+  display: block
+  position: relative
+  padding: 26.4px 0
+  width: 100%
+  line-height: normal
+  border-top: 1px solid #000
 .explore .explore-wrapper
   max-height: 0
   overflow: hidden
   margin-bottom: 0
-
 .explore .secondary-features.full
   width: 100%
   margin-left: 0
   margin-right: 0
   padding: 0
-
 .explore .secondary-features
   padding: 0
-
 .explore .secondary-features.full .related-title
   display: none
   padding: 24px 0 20px
   border-bottom: none
-
 .explore h6
   text-transform: uppercase
   font-size: 18px
@@ -325,25 +373,20 @@ ul.links a
   width: 100%
   margin-left: 0
   margin-right: 0
-
 .explore .feature-tile
   margin-bottom: 54px
-  padding: 0 6px
+  padding: 0
   width: 100%
   margin-left: 0
   margin-right: 0
-
 .explore .feature-tile.secondary:last-of-type
   margin-bottom: 0
-
 .explore .tile-content
   display: block
   position: relative
-
 .explore .feature-tile.secondary .feature-image
   width: 100%
   min-height: 288px
-
 .explore .feature-image
   position: relative
   overflow: hidden
@@ -351,37 +394,18 @@ ul.links a
   -ms-flex-positive: 1
   flex-grow: 1
   overflow: hidden
-
-.explore .feature-tile.secondary .feature-titling
-  margin: 0 16px
-
-.explore .feature-titling
-  padding-top: 18px
-
-.feature-titling
-  h6, h3
-    text-decoration: none
-    color: black
-
-.explore .feature-tile.secondary .feature-image
-    width: 100%
-    min-height: 288px
-
-.explore .feature-image
-  position: relative
-  overflow: hidden
-  -webkit-flex-grow: 1
-  -ms-flex-positive: 1
-  flex-grow: 1
-  overflow: hidden
-
 .explore .feature-image .responsive-image
   position: absolute
   top: 0
   left: 0
   width: 100%
   height: 100%
+.responsive-image
+  background-color: #eee
+  position: relative
 
+
+  overflow: hidden
 .explore .feature-image img
   transition: -webkit-transform 500ms ease-out
   transition: transform 500ms ease-out
@@ -393,22 +417,36 @@ ul.links a
   top: 0
   left: 0
   max-width: none
-
+img.lazy.loaded
+  opacity: 1
 .explore img
   -webkit-backface-visibility: hidden
   backface-visibility: hidden
-  opacity: 1
-
 .responsive-image img
   position: absolute
   top: 0
   left: 0
   max-width: none
-
+img.lazy
+  transition: 150ms linear opacity
+  opacity: 0
+.explore .feature-tile.secondary .feature-titling
+  margin: 0 16px
+.explore .feature-titling
+  padding-top: 18px
 .explore .secondary-features.full .related-eyebow
   border-bottom: 0
   padding: 0
   margin-bottom: 6px
+.explore .feature-tile.secondary h3
+  font-weight: 400
+  font-size: 38px
+  line-height: 1.29
+
+.feature-titling
+  h6, h3
+    text-decoration: none
+    color: black
 
 
 /* Responsive */
@@ -531,11 +569,34 @@ ul.links a
     font-size: 13px
   .project-page .meta-group h6
     display: block
-
+  /* Project Cover Image */
+  .project-page .button-container.cover .button
+    display: none
+    font-size: 13px
+  .project-page .section.mobile-covers
+    display: none
+  .project-page .covers
+    display: block
+    margin-bottom: 36px
   /* Other Projects */
+  .project-page .explore .button-container.margin
+    margin: 0
+  .project-page .explore .button-container
+    border: none
+  .project-page .explore .button-container .button
+    display: none
+    font-size: 18px
+  .explore .button-container button
+    display: none
+    font-size: 13px
   .explore .explore-wrapper
     overflow: visible
     max-height: none
+  .explore .secondary-features.full
+    width: 100%
+    margin-left: 0
+    margin-right: 0
+    padding: 0
   .explore .secondary-features
     width: 66.66667%
     margin-left: 0
@@ -545,14 +606,6 @@ ul.links a
     display: block
   .explore h6
     font-size: 13px
-  .explore .feature-tile.secondary
-    width: 100%
-    margin-left: 0
-    margin-right: 0
-  .explore .feature-tile
-    margin-bottom: 12px
-  .explore .secondary-features.full .feature-tile:nth-child(3)
-    padding: 0
   .explore .secondary-features.full .feature-tile
     width: 50%
     margin-left: 0
@@ -565,13 +618,19 @@ ul.links a
     margin-right: 0
   .explore .feature-tile
     margin-bottom: 12px
-  .explore .feature-tile.secondary:last-of-type
-    display: none
+  .explore .secondary-features.full .feature-tile:nth-child(3)
+    padding: 0
   .explore .secondary-features.full .feature-tile:last-of-type
     display: none
     padding: 0
+  .explore .feature-tile.secondary:last-of-type
+    display: none
   .explore .feature-tile.secondary .feature-titling
     margin: 0
+  .explore .feature-tile.secondary h3
+    font-size: 24px
+    letter-spacing: 0.3px
+    line-height: 1.29
 
 @media screen and (min-width: 769px)
   /* Page Content */
@@ -629,14 +688,17 @@ ul.links a
     font-size: 15px
   .project-page .section h6
     font-size: 15px
-
-
+  /* Project Cover Image */
+  .project-page .button-container.cover .button
+    font-size: 15px
   /* Other Projects */
+  .project-page .explore .button-container .button
+    font-size: 15px
+  .explore .button-container button
+    font-size: 15px
   .explore h6
     font-size: 15px
-  .explore .feature-tile
-    margin-bottom: 0
-  .explore .secondary-features.full .feature-tile:nth-child(3)
+  .explore .feature-tile.secondary:first-of-type
     padding: 0 42px 0 0
   .explore .secondary-features.full .feature-tile
     width: 33.33333%
@@ -648,10 +710,16 @@ ul.links a
     margin-right: 0
   .explore .feature-tile
     margin-bottom: 0
-  .explore .feature-tile.secondary:last-of-type
-    display: block
+  .explore .secondary-features.full .feature-tile:nth-child(3)
+    padding: 0 42px 0 0
   .explore .secondary-features.full .feature-tile:last-of-type
     display: block
+  .explore .feature-tile.secondary:last-of-type
+    display: block
+  .explore .feature-tile.secondary h3
+    font-size: 28px
+    letter-spacing: 0.3px
+    line-height: 1.29
 
 @media screen and (min-width: 1300px)
   /* Desktop */
@@ -693,8 +761,16 @@ ul.links a
     font-size: 18px
   .project-page .section h6
     font-size: 18px
-
-
-
+  /* Project Cover Image */
+  .project-page .button-container.cover .button
+    font-size: 18px
+  /* Other Projects */
+  .project-page .explore .button-container .button
+    font-size: 18px
+  .explore .button-container button
+    font-size: 18px
   .explore h6
     font-size: 18px
+  .explore .feature-tile.secondary h3
+    font-size: 32px
+    line-height: 1.29

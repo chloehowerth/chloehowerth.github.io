@@ -1235,9 +1235,6 @@ ul.links a {
   padding: 0;
   border-bottom: none; }
 
-.project-page .covers {
-  display: none; }
-
 .project-page .project-description .button-container a.button {
   cursor: pointer; }
 
@@ -1287,6 +1284,36 @@ ul.links a {
   margin-right: 0;
   padding-left: 6px;
   padding-right: 6px; }
+
+/* Project Cover Image */
+.project-page .button-container.cover .button {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  display: block;
+  padding: 26.4px 0;
+  width: 100%;
+  line-height: normal; }
+
+.project-page .section.mobile-covers {
+  display: block;
+  max-height: 0;
+  overflow: hidden; }
+
+.project-page .section.mobile-covers .covers {
+  display: block; }
+
+.project-page .covers {
+  display: none;
+  padding-left: 6px;
+  padding-right: 6px;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0; }
+
+.project-page .section.mobile-covers .cover {
+  margin-top: 24px; }
 
 /* Other Projects */
 .project-page .explore .button-container {
@@ -1543,6 +1570,15 @@ ul.links a {
     font-size: 13px; }
   .project-page .meta-group h6 {
     display: block; }
+  /* Project Cover Image */
+  .project-page .button-container.cover .button {
+    display: none;
+    font-size: 13px; }
+  .project-page .section.mobile-covers {
+    display: none; }
+  .project-page .covers {
+    display: block;
+    margin-bottom: 36px; }
   /* Other Projects */
   .explore .explore-wrapper {
     overflow: visible;
@@ -1640,6 +1676,9 @@ ul.links a {
     font-size: 15px; }
   .project-page .section h6 {
     font-size: 15px; }
+  /* Project Cover Image */
+  .project-page .button-container.cover .button {
+    font-size: 15px; }
   /* Other Projects */
   .explore h6 {
     font-size: 15px; }
@@ -1701,6 +1740,9 @@ ul.links a {
   .project-page .project-description .button-container .button {
     font-size: 18px; }
   .project-page .section h6 {
+    font-size: 18px; }
+  /* Project Cover Image */
+  .project-page .button-container.cover .button {
     font-size: 18px; }
   .explore h6 {
     font-size: 18px; } }
