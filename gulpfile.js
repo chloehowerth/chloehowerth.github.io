@@ -17,7 +17,8 @@ var autoprefixer = require('gulp-autoprefixer'),
 
 // paths
 var styleSrc = 'source/sass/**/*.sass',
-    styleDest = 'build/assets/css/',
+    //styleDest = 'build/assets/css/',
+    styleDest = 'css/',
     htmlSrc = 'source/',
     htmlDest = 'build/',
     vendorSrc = 'source/js/vendors/',
@@ -44,13 +45,15 @@ gulp.task('sass', function() {
             suffix: '.min'
           }))
 
-        .pipe(gulp.dest('build/assets/css'));
+        //.pipe(gulp.dest('build/assets/css'));
+        .pipe(gulp.dest('css'));
 });
 
 gulp.task('images', function() {
     gulp.src('source/img/*')
         .pipe(images())
-        .pipe(gulp.dest('build/assets/img'));
+        //.pipe(gulp.dest('build/assets/img'));
+        .pipe(gulp.dest('img'));
 });
 
 // Uglify js files
@@ -91,7 +94,8 @@ gulp.task('watch', function(){
     gulp.watch(styleSrc,['sass']);
     gulp.watch(scriptSrc,['scripts']);
     gulp.watch(vendorSrc,['vendors']);
-    gulp.watch(['build/*.html', 'build/assets/css/*.css', 'build/assets/js/*.js', 'build/assets/js/vendors/*.js']).on('change', browserSync.reload);
+    //gulp.watch(['build/*.html', 'build/assets/css/*.css', 'build/assets/js/*.js', 'build/assets/js/vendors/*.js']).on('change', browserSync.reload);
+    gulp.watch(['*.html', 'css/*.css', 'build/assets/js/*.js', 'build/assets/js/vendors/*.js']).on('change', browserSync.reload);
 
 });
 
