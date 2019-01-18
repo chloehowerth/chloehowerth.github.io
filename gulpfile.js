@@ -82,7 +82,8 @@ gulp.task('watch', function(){
     // Serve files from the root of this project
     browserSync.init({
         server: {
-            baseDir: "./build"
+            //baseDir: "./build"
+            proxy: "http://localhost/build"
         },
         notify: false
     });
