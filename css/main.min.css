@@ -389,15 +389,30 @@ header {
     text-transform: uppercase;
     text-decoration: none; }
 
+/* Logo SVG */
+header .page-title {
+  width: 33.33333%;
+  margin-left: 0;
+  margin-right: 0; }
+
+header .logo {
+  max-width: 63px;
+  display: block; }
+
+header .scaling-svg-container {
+  margin-top: 2px; }
+
 .scaling-svg-container {
   width: 100%;
   position: relative; }
-  .scaling-svg-container .scaling-svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
+
+.scaling-svg-container svg {
+  fill: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 /* Nav */
 .header {
@@ -574,30 +589,9 @@ footer {
   .footer-links .grid {
     align-items: center; }
 
-.scaling-svg-container {
-  display: block;
-  position: relative;
-  height: 0;
-  width: 100%;
-  padding: 0;
-  /*padding-bottom: 60.2708286%*/
-  padding-bottom: 100%;
-  /* override this inline for aspect ratio other than square */ }
-
-.scaling-svg {
-  fill: white;
-  display: block;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  max-width: 100%;
-  left: 0;
-  top: 0;
-  overflow: hidden; }
-
 .footer-logo {
-  fill: white;
-  font-size: 30px;
+  color: white;
+  font-size: 18px;
   display: block;
   flex-basis: 100%;
   margin-bottom: 18px;
