@@ -653,18 +653,10 @@ main.page.about .header-image {
 main.page section.header-image .responsive-img {
   padding-bottom: 56.25%; }
 
-.responsive-img {
+.responsive-img-mobile {
   background-color: #eee;
   position: relative;
   overflow: hidden; }
-  .responsive-img img {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    max-width: none;
-    opacity: 1;
-    transition: 150ms linear opacity; }
 
 main.page section.page-content {
   padding-top: 108px; }
@@ -680,7 +672,7 @@ main.page.about .text-content {
   color: #000; }
 
 p {
-  font-size: 26px;
+  font-size: 22px;
   line-height: 1.46;
   letter-spacing: 0.1px; }
 
